@@ -42,4 +42,5 @@ def on_release():
     
 myBtn = tk.Button(root,text = "Submit email", command = on_release)
 myBtn.place(x = 310, y = 600)
+root.resizable(width=False, height=False)
 root.mainloop()
