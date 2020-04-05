@@ -5,7 +5,10 @@ Created on Mar 31, 2020
 '''
 import tkinter as tk
 import smtplib
-from word_length import find_word_length
+
+
+def find_word_length(text):
+    return len([i for i in text.split() if i != '\n'])
 
 class Email_app(tk.Frame):
     def __init__(self, master = None):
